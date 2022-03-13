@@ -1,0 +1,39 @@
+{
+    "user1": [
+      {
+      "firstName": "Jose",
+      "lastName": "Rodriguez",
+      "email": "joserodriguez@gmail.com",
+      "id": "1234"
+      }
+    ],
+
+    "user2": [
+        {
+        "firstName": "Jose",
+        "lastName": "Rodriguez",
+        "email": "joserodriguez@gmail.com",
+        "id": "1234"
+        }
+      ],
+
+      "user3": [
+        {
+        "firstName": "Jose",
+        "lastName": "Rodriguez",
+        "email": "joserodriguez@gmail.com",
+        "id": "1234"
+        }
+      ],
+
+      "user4": [
+        {
+        "firstName": "Jose",
+        "lastName": "Rodriguez",
+        "email": "joserodriguez@gmail.com",
+        "id": "1234"
+        }
+      ]
+  }
+
+  
