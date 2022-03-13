@@ -1,11 +1,7 @@
 import json
 class UserData:
     allInfo = {}
-    def __init__(self, firstName, emailAddress, idNum, lastName):
-        self.firstName = firstName 
-        self.emailAddress = emailAddress 
-        self.idNum = idNum 
-        self.lastName = lastName
+    def __init__(self):
         self.createAllInfo()
    
     def createAllInfo(self):
@@ -15,4 +11,8 @@ class UserData:
         print(json.dumps(self.allInfo, indent = 4, sort_keys=True))
 
     def addUser(self, firstName, lastName, idNum,  emailAddress):
-        
+        self.allInfo[idNum] = [{"firstName": firstName, "lastName" : lastName, "email" : emailAddress}]  
+        json.dump(self.allInfo, open("data.json", 'w+'), ensure_ascii = True, indent = 4, sort_keys = True)
+   
+    def getUser(self, idNum: str):
+        print(json.dumps(self.allInfo[str(idNum)], indent = 4, sort_keys = True))
